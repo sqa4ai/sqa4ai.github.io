@@ -1,0 +1,501 @@
+<!DOCTYPE HTML>
+<!--
+        Theory by TEMPLATED
+        templated.co @templatedco
+        Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>SQA4AI 2021</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="#"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109528948-1');
+    </script>
+
+
+</head>
+<body class="subpage">
+
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+        <a href="index.html" class="logo"><h2><b style="color:white">SQA4AI</b></h2></a>
+        <nav id="nav">
+            <a href="index.html"><h3 style="color:white">HOME</h3></a>
+            <a href="submission.html"><h3 style="color:white">CALL FOR PAPERS</h3></a>
+            <a href="papers.html"><h3><b style="color:white">ACCEPTED PAPERS</b></h3></a>
+            <a href="program.html"><h3 style="color:white">PROGRAM</h3></a>
+            <a href="committe.html"><h3 style="color:white">COMMITTEE</h3></a>
+            <!--<a href="https://maltesque2021.github.io/MaLTeSQuE2020.github.io/"><h3 style="color:white">PREVIOUS EDITION</h3></a>-->
+        </nav>
+        </nav>
+        <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+    </div>
+</header>
+
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="inner" style="margin-top: -2% !important;">
+        <header class="align-center">
+            <h2>Accepted papers</h2>
+
+            <h3>To be announced</h3>
+
+            <!--<p style="text-align: center;"><h4><strong>Comparing Within- and Cross-Project Machine Learning Algorithms for Code Smell Detection</strong></h4></p>
+<!--            <p style="text-align: center;"><strong>Manuel De Stefano</strong> <a style="color:blue" href="mailto:madestefano@unisa.it">madestefano@unisa.it</a> <i>(University of Salerno)</i>,-->
+<!--                <strong>Fabiano Pecorelli</strong> <a style="color:blue" href="mailto:fpecorelli@unisa.it">fpecorelli@unisa.it</a> <i>(University of Salerno),</i><br>-->
+<!--                <strong>Fabio Palomba</strong> <a style="color:blue" href="mailto:fpalomba@unisa.it">fpalomba@unisa.it</a> <i>(University of Salerno)</i>,-->
+<!--                <strong>Andrea De Lucia</strong> <a style="color:blue" href="mailto:adelucia@unisa.it">adelucia@unisa.it</a> <i>(University of Salerno)</i>-->
+              <!-- <p style="text-align: center;"><strong>Manuel De Stefano</strong> <i>(University of Salerno)</i>,
+                <strong>Fabiano Pecorelli</strong> <i>(University of Salerno),</i>
+                <strong>Fabio Palomba</strong> <i>(University of Salerno)</i>,<br>
+                <strong>Andrea De Lucia</strong> <i>(University of Salerno)</i>
+
+            </p>
+
+            <p><strong>Abstract:</strong> Code smells represent a well-known problem in software engineering,
+since they are known cause of loss of comprehensibility and maintainability. The most recent efforts in devising automatic machine learning-based
+code smell detection techniques have achieved unsatisfying results so far. This could be explained by the fact that all these approaches follow a
+within-project classification, i.e., training and test data are taken from the same source project, which combined with the unbalanced nature of the problem,
+produces datasets with a very low number of instances belonging to the minority class (i.e., smelly instances). In this paper, we propose a cross-project
+machine learning approach and comparing its performance with a within-project alternative.
+The core idea is to use transfer learning to increase the overall number of smelly instances in the training datasets.
+Our results have shown that cross-project classification provides very similar performance with respect to within-project.
+Despite this finding does not yet provide a step forward in increasing the performance of ML techniques for code smell detection, it sets the basis for further investigations.</p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>Unsupervised Learning of General-Purpose Embeddings for Code Changes</strong></h4></p>
+            <p style="text-align: center;">
+
+                <strong>Mikhail Pravilov</strong> <i>(Higher School of Economics)</i>,
+                <strong>Egor Bogomolov</strong> <i>(JetBrains Research, Higher School of
+   Economics)</i>,
+                <strong>Yaroslav Golubev</strong> <i>(JetBrains Research)</i>,
+                <strong>Timofey Bryksin</strong> <i>(JetBrains Research, Higher School of
+   Economics)</i>
+
+            </p>
+
+            <p><strong>Abstract:</strong> A lot of problems in the field of software engineering — bug fixing,
+                commit message generation, etc. — require analyzing not only the
+                code itself but specifically code changes. Applying machine learning
+                models to these tasks requires us to create numerical representations of the changes,
+                i.e. embeddings. Recent studies demonstrate
+                that the best way to obtain these embeddings is to pre-train a deep
+                neural network in an unsupervised manner on a large volume of
+                unlabeled data and then further fine-tune it for a specific task.
+                In this work, we propose an approach for obtaining such embeddings of code changes during pre-training
+                and evaluate them on two different downstream tasks — applying changes to code and
+                commit message generation. The pre-training consists of the model
+                learning to apply the given change (an edit sequence) to the code in
+                a correct way, and therefore requires only the code change itself. To
+                increase the quality of the obtained embeddings, we only consider
+                the changed tokens in the edit sequence. In the task of applying
+                code changes, our model outperforms the model that uses full edit
+                sequences by 5.9 percentage points in accuracy. As for the commit
+                message generation, our model demonstrated the same results as
+                supervised models trained for this specific task, which indicates
+                that it can encode code changes well and can be improved in the
+                future by pre-training on a larger dataset of easily gathered code changes.
+
+            </p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>VaryMinions: Leveraging RNNs to Identify Variants in Event Logs</strong></h4></p>
+            <p style="text-align: center;">
+
+                <strong>Sophie Fortz</strong> <i>(Université de Namur)</i>,
+                <strong>Paul Temple</strong> <i>(Université de Namur),</i>
+                <strong>Xavier Devroey</strong> <i>(Delft University of Technology)</i>,<br>
+                <strong>Patrick Heymans</strong> <i>(Université de Namur),</i>
+                <strong>Gilles Perrouin</strong> <i>(Université de Namur)</i>
+
+
+            </p>
+
+            <p><strong>Abstract:</strong> Business processes have to manage variability in their execution,
+                e.g., to deliver the correct building permit in different municipalities.
+                This variability is visible in event logs, where sequence of events are
+                shared by the core process (building permit authorisation) but may
+                also be specific to each municipality. To rationalise resources (e.g.,
+                derive a configurable business process capturing all municipalities’
+                permit variants) or to debug anomalous behaviours, it is mandatory
+                to identify to which variant a given trace belongs to. This paper
+                supports this task by training Long Short Term Memory (LSTMs)
+                and Gated Recurrent Units (GRUs) algorithms on two datasets:
+                a configurable municipality and a travel expenses workflow. We
+                demonstrate that variability can be identified accurately (> 87%)
+                and discuss challenges of learning highly entangled variants.
+
+            </p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>Toward Static Test Flakiness Prediction: A Feasibility Study</strong></h4></p>
+            <p style="text-align: center;">
+
+                <strong>Valeria Pontillo</strong>  <i>(University of Salerno)</i>,
+                <strong>Fabio Palomba</strong> <i>(University of Salerno)</i>,
+                <strong>Filomena Ferrucci</strong> <i>(University of Salerno)</i>
+
+
+            </p>
+
+            <p><strong>Abstract:</strong> Flaky tests are tests that exhibit both a passing and failing behavior
+                    when run against the same code. While the research community
+                    has attempted to define automated approaches for detecting and
+                    addressing test flakiness, most of them suffer from scalability issues
+                    and uncertainty as they require test cases to be run multiple times.
+                    This limitation has been recently targeted by means of machine learning solutions that could predict the flakiness of tests
+                    using a set of both static and dynamic metrics that would avoid
+                    the re-execution of tests. Recognizing the effort spent so far, this
+                    paper poses the first steps toward an orthogonal view of the problem, namely the classification of flaky tests using only statically
+                    computable software metrics. We propose a feasibility study on 72
+                    projects of the iDFlakies dataset, and investigate the differences
+                    between flaky and non-flaky tests in terms of 25 test and production
+                    code metrics and smells. First, we statistically assess those differences.
+                    Second, we build a logistic regression model to verify the
+                    extent to which the differences observed are still significant when
+                    the metrics are considered together. The results show a relation
+                    between test flakiness and a number of test and production code
+                    factors, indicating the possibility to build classification approaches
+                    that exploit those factors to predict test flakiness.
+
+            </p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>Building a Bot for Automatic Expert Retrieval on Discord</strong></h4></p>
+            <p style="text-align: center;">
+<!--                <strong>Ignacio Nuñez Norambuena</strong> <a style="color:blue" href="mailto:inunezn@fen.uchile.cl">inunezn@fen.uchile.cl</a> <i>(University of Chile)</i>,-->
+<!--                <strong>Alexandre Bergel</strong> <a style="color:blue" href="mailto:abergel@dcc.uchile.cl">abergel@dcc.uchile.cl</a> <i>(University of Chile)</i>-->
+
+               <!-- <strong>Ignacio Nuñez Norambuena</strong> <i>(University of Chile)</i>,
+                <strong>Alexandre Bergel</strong> <i>(University of Chile)</i>
+
+            </p>
+
+            <p><strong>Abstract:</strong> It is common for software practitioners to look for experts on on-line chat platforms, such as Discord.
+                However, finding them is a complex activity that requires a deep knowledge of the open source community.
+                As a consequence, newcomers and casual participants
+                may not be able to adequately find experts willing to discuss a particular topic.
+                Our paper describes a bot that provides a ranked list of Discord
+                users that are experts in a particular set of topics. Our bot uses
+                simple heuristics to model expertise, such as a word occurrence
+                table and word embeddings. Our bot shows that at least half of the
+                retrieved users are indeed experts.
+
+            </p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>Metrics Selection for Load Monitoring of Service-Oriented System</strong></h4></p>
+            <p style="text-align: center;">
+<!--                <strong>Francesco Lomio</strong> <a style="color:blue" href="mailto:francesco.lomio@tuni.fi">francesco.lomio@tuni.fi</a> <i>(Tampere University)</i>,-->
+<!--                <strong>Sampsa Jurvansuu</strong> <a style="color:blue" href="mailto:sampsa.jurvansuu@tuni.fi">sampsa.jurvansuu@tuni.fi</a> <i>(Tampere University)</i>,-->
+<!--                <br><strong>Davide Taibi</strong> <a style="color:blue" href="mailto:davide.taibi@tuni.fi">davide.taibi@tuni.fi</a> <i>(Tampere University)</i>-->
+
+        <!--        <strong>Francesco Lomio</strong> <i>(Tampere University)</i>,
+                <strong>Sampsa Jurvansuu</strong> <i>(Tampere University)</i>,
+                <strong>Davide Taibi</strong> <i>(Tampere University)</i>
+
+            </p>
+
+
+            <p><strong>Abstract:</strong> <em>Background</em>. Complex software systems produce a large amount of
+                data depicting their internal state and activities. The data can be
+                monitored to make estimations and predictions of the status of the
+                system, helping taking preventative actions in case of impending
+                malfunctions and failures. However, a complex system may reveal
+                thousands of internal metrics, which makes it a non-trivial task to
+                decide which metrics are the most important to monitor.
+                <em>Objective</em>. In this work we aim at finding a subset of metrics
+                to collect and analyse for the monitoring of the load in a Service-
+                oriented system.
+                <em>Method</em>. We use a performance test bench tool to generate load of
+different intensities on the target system, which is a specific service-
+oriented application platform. The numeric metrics data collected
+from the system is combined with the load intensity at each moment.
+The combined data is used to analyse which metrics are best at
+estimating the load of the system. By using a regression analysis
+it was possible to rank the metrics by their ability to measure the
+load of the system.
+                <em>Results</em>. The results show that (1) the use of machine learning
+regressor allows to correctly measure the load of a system-oriented
+system, and (2) the most important metrics are related to network
+traffic and request counts, as well as memory usage and disk activity.
+<em>Conclusion</em>. The results help with the designs of efficient monitoring tool. In addition, further investigation should be focused on
+exploring more precise machine learning model to further improve
+the metric selection process.
+            </p>
+
+            <hr>
+
+
+            <h3>Talk</h3>
+
+            <p style="text-align: center;"><h4><strong>The Impact of Release-based Validation on Software Vulnerability Prediction Models</strong></h4></p>
+            <p style="text-align: center;">
+<!--                <strong>Giulia Sellitto</strong> <a style="color:blue" href="mailto:g.sellitto21@studenti.unisa.it">g.sellitto21@studenti.unisa.it</a> <i>(University of Salerno)</i>,-->
+<!--                <strong>Filomena Ferrucci</strong> <a style="color:blue" href="mailto:fferrucci@unisa.it">fferrucci@unisa.it</a> <i>(University of Salerno)</i>-->
+
+<!--                <strong>Giulia Sellitto</strong> <i>(University of Salerno)</i>,
+                <strong>Filomena Ferrucci</strong> <i>(University of Salerno)</i>
+
+            </p>
+
+            <p><strong>Abstract: </strong>Software vulnerability prediction models represent a promising
+approach in security defect analysis, since they allow to focus testing and improve software quality. Several studies have proposed
+Machine Learning approaches which demonstrated satisfying performance when evaluated using K-fold Cross-validation. However,
+recent research demonstrated that, when applying a release-based
+validation strategy instead, the performance declined. We want
+to investigate this issue, by conducting a comparative study on
+different models and dataset. We analyze the impact of using a
+relase-based validation approach on vulnerability prediction models formerly evaluated using cross-validation. We rely on an existing
+dataset to evaluate two prediction models that exploit code metrics
+and textual features, respectively. We confirm that the release-based
+validation approach leads to generally lower performance, high-
+lighting that further research would be needed to make vulnerability
+prediction models more effective.
+
+            </p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>On the Limitations of Bots for Software Engineering</strong></h4></p>
+            <p style="text-align: center;">
+<!--                <strong>Sami Hadouaj</strong> <a style="color:blue" href="mailto:samihadouaj@gmail.com">samihadouaj@gmail.com</a> <i>(INSAT, Tunisia)</i>,-->
+<!--                <strong>Fabio Palomba</strong> <a style="color:blue" href="mailto:fpalomba@unisa.it">fpalomba@unisa.it</a> <i>(University of Salerno)</i>-->
+
+         <!--       <strong>Sami Hadouaj</strong> <i>(INSAT, Tunisia)</i>,
+                <strong>Fabio Palomba</strong> <i>(University of Salerno)</i>
+
+            </p>
+
+            <p><strong>Abstract: </strong>Software engineering projects are typically developed by multiple
+developers that collaboratively work through the use of a version
+control system. The collaborative nature of software development
+has given rise to the use of automated mechanisms, called bots,
+that recommend source code quality-related improvements while
+a new pull request is open on the repository. These bots use a
+combination of multiple artificial intelligence approaches, including
+natural language processing and deep learning. In this presentation
+abstract, we aim at discussing the current inner-working of these
+bots as well as the existing limitations. The final goal of our research
+is to devise a list of improvements that should be made to make
+those bots more useful to developers.
+
+            </p>
+
+            <hr>
+
+            <p style="text-align: center;"><h4><strong>Evidence and Machine Learning based Task Allocation: a Combined Approach</strong></h4></p>
+            <p style="text-align: center;">
+<!--                <strong>Stefano Lambiase</strong> <a style="color:blue" href="mailto:s.lambiase7@studenti.unisa.it">s.lambiase7@studenti.unisa.it</a> <i>(INSAT, Tunisia)</i>,-->
+<!--                <strong>Fabiano Pecorelli</strong> <a style="color:blue" href="mailto:fpecorelli@unisa.it">fpecorelli@unisa.it</a> <i>(University of Salerno),</i><br>-->
+<!--                <strong>Fabio Palomba</strong> <a style="color:blue" href="mailto:fpalomba@unisa.it">fpalomba@unisa.it</a> <i>(University of Salerno)</i>,-->
+<!--                <strong>Andrea De Lucia</strong> <a style="color:blue" href="mailto:adelucia@unisa.it">adelucia@unisa.it</a> <i>(University of Salerno)</i>,-->
+<!--                <strong>Filomena Ferrucci</strong> <a style="color:blue" href="mailto:fferrucci@unisa.it">fferrucci@unisa.it</a> <i>(University of Salerno)</i>,-->
+<!--                <strong>Raffaela Mirandola</strong> <a style="color:blue" href="mailto:raffaela.mirandola@polimi.it">raffaela.mirandola@polimi.it</a> <i>(Politecnico di Milano)</i>,-->
+<!--                <strong>Damian Andrew Tamburri</strong> <a style="color:blue" href="mailto:d.a.tamburri@tue.nl">d.a.tamburri@tue.nl</a> <i>(Jheronimus Academy of Data Science)</i>-->
+
+             <!--   <strong>Stefano Lambiase</strong> <i>(University of Salerno)</i>,
+                <strong>Fabiano Pecorelli</strong> <i>(University of Salerno),</i>
+                <strong>Fabio Palomba</strong> <i>(University of Salerno)</i>,
+                <strong>Andrea De Lucia</strong> <i>(University of Salerno)</i>,<br>
+                <strong>Filomena Ferrucci</strong> <i>(University of Salerno)</i>,
+                <strong>Raffaela Mirandola</strong> <i>(Politecnico di Milano)</i>,
+                <strong>Damian Andrew Tamburri</strong> <i>(Jheronimus Academy of Data Science)</i>
+
+            </p>
+
+            <p><strong>Abstract: </strong>Software construction is nowadays regulated by means of task issuing and
+                allocations—think of issue-tracking systems and the task
+management therein—, however, task allocation is mostly left to
+human interpretation with little or no evidence-based recommendation as to which developer (or even online source) might better
+fit a specific task description. In this presentation abstract we show
+a software task allocation technique that is evidence-based, namely,
+it uses a metrics-based approach to figure out which developer, with
+which skills, better fits a specific task description. Moreover, we
+propose the application of machine learning techniques to improve
+the allocation strategy effectiveness over time. We aim to start a
+fruitful discussion on the application of such strategies to the task
+allocation activity, which is one of the key factors for the software
+projects’ success.
+
+
+            </p>
+
+            <hr>
+
+        </header>
+    </div>
+</section>
+
+<!--
+<section id="main" class="wrapper">
+    <div class="inner" style="margin-top: -2% !important;">
+        <header class="align-center">
+            <h2>Accepted papers</h2>
+            <h3>Technical papers</h3>
+            <p style="text-align: center;"><h4><strong>A Preliminary Study on the Adequacy of Static Analysis Warnings with Respect to Code Smell Prediction</strong></h4></p>
+            <p style="text-align: center;"><strong>Savanna Lujan</strong> <a style="color:blue" href="mailto:savanna.lujan@tuni.fi">savanna.lujan@tuni.fi</a> <i>(Tampere University)</i>, <strong>Fabiano Pecorelli</strong> <a style="color:blue" href="mailto:fpecorelli@unisa.it">fpecorelli@unisa.it</a> <i>(SeSa Lab - University of Salerno),</i><br>
+            <strong>Fabio Palomba</strong> <a style="color:blue" href="mailto:fpalomba@unisa.it">fpalomba@unisa.it</a> <i>(SeSa Lab - University of Salerno)</i>, <strong>Andrea De Lucia</strong> <a style="color:blue" href="mailto:adelucia@unisa.it">adelucia@unisa.it</a> <i>(SeSa Lab - University of Salerno),</i><br>
+                <strong>Valentina Lenarduzzi</strong> <a style="color:blue" href="mailto:valentina.lenarduzzi@lut.fi">valentina.lenarduzzi@lut.fi</a> <i>(LUT University)</i>
+            </p>
+            <p><strong>Abstract:</strong> Code smells are poor implementation choices applied during software evolution
+                that can affect source code maintainability. While several heuristic-based approaches have been proposed
+                in the past, machine learning solutions have recently gained attention since they may potentially address
+                some limitations of state-of-the-art approaches. Unfortunately, however, machine learning-based code smell
+                detectors still suffer from low accuracy. In this paper, we aim at advancing the knowledge in the field
+                by investigating the role of static analysis warnings as features of machine learning models for the
+                detection of three code smell types. We first verify the potential contribution given by these features.
+                Then, we build code smell prediction models exploiting the most relevant features coming from the first
+                analysis. The main finding of the study reports that the warnings given by the considered tools lead the
+                performance of code smell prediction models to drastically increase with respect to what reported by previous
+                research in the field.</p>
+            <hr>
+            <p style="text-align: center;"><h4><strong>RARE: A Labeled Dataset for Cloud-Native Memory Anomalies</strong></h4></p>
+            <p style="text-align: center;"><strong>Francesco Lomio</strong> <a style="color:blue" href="mailto:francesco.lomio@tuni.fi">francesco.lomio@tuni.fi</a> <i>(Tampere University)</i>, <strong>Diego Martínez Baselga</strong> <a style="color:blue" href="mailto:diego.martinezbaselga@tuni.fi">diego.martinezbaselga@tuni.fi</a> <i>(Tampere University),</i><br>
+                <strong>Sergio Moreschini</strong> <a style="color:blue" href="mailto:sergio.moreschini@tuni.fi">sergio.moreschini@tuni.fi</a> <i>(Tampere University)</i>, <strong>Heikki Huttunen</strong> <a style="color:blue" href="mailto:heikki.huttunen@tuni.fi">heikki.huttunen@tuni.fi</a> <i>(Tampere University),</i><br>
+                <strong>Davide Taibi</strong> <a style="color:blue" href="mailto:davide.taibi@tuni.fi">davide.taibi@tuni.fi</a> <i>(Tampere University)</i>
+            </p>
+            <p><strong>Abstract:</strong> Anomaly detection has been attracting interest from both the industry and the research community for many years, as the number of published papers and services adopted grew exponentially over the last decade.
+                One of the reasons behind this is the wide adoption of cloud systems from the majority of players in multiple industries, such as online shopping, advertisement or remote computing.
+                In this work we propose a Dataset foR cloud-nAtive memoRy anomaliEs: RARE. It includes labelled anomaly time-series data, comprising of over 900 unique metrics.
+                This dataset has been generated using a microservice for injecting artificial byte stream in order to overload the nodes, provoking memory anomalies, which in some cases resulted in a crash. The system was built using a Kafka server deployed on a Kubernetes system. Moreover, in order to get access and download the metrics related to the server, we utilised Prometheus.
+                In this paper we present a dataset that can be used coupled with machine learning algorithms for detecting anomalies in a cloud based system. The dataset will be available in the form of CSV file through an online repository. Moreover, we also included an example of application using a Random Forest algorithm for classifying the data as anomalous or not. The goal of the RARE dataset is to help in the development of more accurate and reliable machine learning methods for anomaly detection in cloud based systems.
+            </p>
+            <hr>
+            <p style="text-align: center;"><h4><strong>TraceSim: A Method for Calculating Stack Trace Similarity</strong></h4></p>
+            <p style="text-align: center;"><strong>Roman Vasiliev</strong> <a style="color:blue" href="mailto:roman.vasiliev@jetbrains.com">roman.vasiliev@jetbrains.com</a> <i>(JetBrains)</i>, <strong>Dmitrij Koznov</strong> <a style="color:blue" href="mailto:d.koznov@spbu.ru">d.koznov@spbu.ru</a> <i>(Saint-Petersburg State University),</i><br>
+                <strong>George Chernishev</strong> <a style="color:blue" href="mailto:chernishev@gmail.com">chernishev@gmail.com</a> <i>(Saint-Petersburg University, Russia)</i>, <strong>Aleksandr Khvorov</strong> <a style="color:blue" href="mailto:aleksandr.khvorov@jetbrains.com">aleksandr.khvorov@jetbrains.com</a> <i>(JetBrains),</i><br>
+                <strong>Dmitry Luciv</strong> <a style="color:blue" href="mailto:d.luciv@spbu.ru">d.luciv@spbu.ru</a> <i>(Saint-Petersburg State University)</i>, <strong>Nikita Povarov</strong> <a style="color:blue" href="mailto:nikita.povarov@jetbrains.com">nikita.povarov@jetbrains.com</a> <i>(JetBrains)</i>
+            </p>
+            <p><strong>Abstract:</strong> Many contemporary software products have subsystems for automatic crash reporting.
+                However, it is well-known that the same bug can produce slightly different reports. To manage this problem,
+                reports are usually grouped, often manually by developers. Manual triaging, however, becomes infeasible for
+                products that have large userbases, which is the reason for many different approaches to automating this task.
+                Moreover, it is important to improve quality of triaging  due to the big volume of reports that needs to be
+                processed properly. Therefore,  even a relatively small improvement could play a significant role in overall
+                accuracy of report bucketing.
+                The majority of existing studies use some kind of a stack trace similarity metric, either based on information
+                retrieval techniques or string matching methods. However, it should be stressed that the quality of triaging is
+                still insufficient.
+                <br>
+                In this paper, we describe TraceSim a novel approach to address this problem which combines TF-IDF, Levenshtein distance,
+                and machine learning to construct a similarity metric. Our metric has been implemented inside an industrial-grade report
+                triaging system. The evaluation on a manually labeled dataset shows significantly better results compared to baseline approaches.</p>
+            <hr>
+            <p style="text-align: center;"><h4><strong>Speeding Up the Data Extraction of Machine Learning Approaches: A Distributed Framework</strong></h4></p>
+            <p style="text-align: center;"><strong>Martin Steinhauer</strong> <a style="color:blue" href="mailto:m.steinhauer@studenti.unisa.it">m.steinhauer@studenti.unisa.it</a> <i>(University of Salerno)</i>,
+                <strong>Fabio Palomba</strong> <a style="color:blue" href="mailto:fpalomba@unisa.it">fpalomba@unisa.it</a> <i>(University of Salerno)</i><br></p>
+            <p><strong>Abstract:</strong> In the last decade, mining software repositories (MSR) has become one of the most
+                important sources to feed machine learning models. Especially open-source projects on platforms like GitHub
+                are providing a tremendous amount of data and make them easily accessible. Nevertheless, there is still is a
+                lack of standardized pipelines to extract data in an automated and fast way. Even though several frameworks
+                and tools exist which can fulfill specific tasks or parts of the data extraction process, none of them allow
+                neither building an automated mining pipeline nor the possibility for full parallelization. As a consequence,
+                researchers interested in using mining software repositories to feed machine learning models are often forced
+                to re-implement commonly used tasks leading to additional development time and libraries may not be integrated optimally.
+                <br>
+                This preliminary study aims to demonstrate current limitations of existing tools and Git itself which are
+                threatening the prospects of standardization and parallelization. We also introduce the multi-dimensionality
+                aspects of a Git repository and how they affects the computation time. Finally, as a proof of concept, we define
+                an exemplary pipeline for predicting refactoring operations, assessing its performance. Finally, we discuss the
+                limitations of the pipeline and further optimizations to be done.</p>
+            <hr>
+            <p style="text-align: center;"><h4><strong>Singling the Odd Ones Out: A Novelty Detection Approach to Find Defects in Infrastructure-as-Code</strong></h4></p>
+            <p style="text-align: center;">
+                <strong>Stefano Dalla Palma</strong> <a style="color:blue" href="mailto:s.dallapalma@uvt.nl">s.dallapalma@uvt.nl</a> <i>(Jheronimus Academy of Data Science)</i>, <strong>Majid Mohammadi</strong> <a style="color:blue" href="mailto:m.mohammadi1@tue.nl">m.mohammadi1@tue.nl</a> <i>(Jheronimus Academy of Data Science)</i>, <strong>Dario Di Nucci</strong> <a style="color:blue" href="mailto:d.dinucci@uvt.nl">d.dinucci@uvt.nl</a> <i>(Jheronimus Academy of Data Science)</i>, <strong>Damian A. Tamburri</strong> <a style="color:blue" href="mailto:d.a.tamburri@tue.nl">d.a.tamburri@tue.nl</a> <i>(Jheronimus Academy of Data Science)</i>
+            </p>
+            <p><strong>Abstract:</strong> Although Infrastructure-as-Code (IaC) is increasingly adopted, little is known about how to best maintain and evolve it.
+                Previous studies focused on defining Machine-Learning models to predict defect-prone blueprints with the final goal of helping DevOps engineers scheduling testing and maintenance activities. However, the dominant technique for IaC defect prediction is supervised binary classification, which uses defective and non-defective instances for training but Such methods require labeled data points to train the classifier. Furthermore, the high imbalance between defective and non-defective samples makes the training more difficult and leads to unreliable classifiers. In this work, we tackle the defect-prediction problem from a different perspective using novelty detection and evaluate the performance of three techniques, namely OneClassSVM, LocalOutlierFactor, and IsolationForest, and compare their performance with a baseline RandomForest binary classifier.
+                Such models are trained using only non-defective samples. At the same time, defective data points are treated as novelty because the number of defective samples is too little compared to defective ones.
+                We conduct an empirical study on an extremely imbalanced dataset consisting of 85 real-world Ansible projects containing only small amounts of defective instances. We found that novelty detection techniques can recognize defects with a high level of precision and recall, an AUC-PR up to 0.86, and an MCC up to 0.31. We deem our results can influence the current trends in defect detection and put forward a new research path toward dealing with this problem.
+            </p>
+            <hr>
+            <p style="text-align: center;"><h4><strong>DeepIaC: Deep Learning-based Linguistic Anti-pattern Detection in IaC</strong></h4></p>
+            <p style="text-align: center;">
+                <strong>Nemania Borovits</strong> <a style="color:blue" href="mailto:n.borovits@tilburguniversity.edu">n.borovits@tilburguniversity.edu</a> <i>(Tilburg University/JADS)</i>, <strong>Indika Kumara</strong> <a style="color:blue" href="mailto:i.p.k.weerasingha.dewage@tue.nl">i.p.k.weerasingha.dewage@tue.nl</a> <i>(Eindhoven University of Technology/JADS)</i>, <strong>Parvathy Krishnan</strong> <a style="color:blue" href="mailto:parvathykrishnank@gmail.com">parvathykrishnank@gmail.com</a> <i>(Tilburg University/JADS)</i>, <strong>Stefano Dalla Palma</strong> <a style="color:blue" href="mailto:s.dalla.palma@uvt.nl">s.dalla.palma@uvt.nl</a> <i>(Tilburg University/JADS)</i>, <strong>Dario Di Nucci</strong> <a style="color:blue" href="mailto:d.dinucci@uvt.nl">d.dinucci@uvt.nl</a> <i>(Tilburg University/JADS)</i>, <strong>Fabio Palomba</strong> <a style="color:blue" href="mailto:fpalomba@unisa.it">fpalomba@unisa.it</a> <i>(University of Salerno)</i>, <strong>Damian Andrew Tamburri</strong> <a style="color:blue" href="mailto:d.a.tamburri@tue.nl">d.a.tamburri@tue.nl</a> <i>(Eindhoven University of Technology/JADS)</i>, <strong>Willem-Jan van den Heuvel</strong> <a style="color:blue" href="mailto:W.J.A.M.v.d.Heuvel@jads.nl">W.J.A.M.v.d.Heuvel@jads.nl</a> <i>(Tilburg University/JADS)</i>
+            </p>
+            <p><strong>Abstract:</strong> Linguistic anti-patterns are recurring poor practices concerning inconsistencies
+                among the naming, documentation, and implementation of an entity. They impede readability, understandability,
+                and maintainability of source code. In this paper, we attempt to detect linguistic anti-patterns in infrastructure as code
+                (IaC) scripts used to provision and manage computing environments. In particular, we consider inconsistencies between the
+                logic/body of IaC code units and their names. To this end, we propose a novel automated approach that employs word embeddings
+                and deep learning techniques. We build and use the abstract syntax tree of IaC code units to create their code embedments.
+                Our experiments with a dataset systematically extracted from open source repositories show that our approach yields an accuracy
+                between 0.785 and 0.915 in detecting inconsistencies.
+            </p>
+            <h3>Presentation abstract</h3>
+            <p style="text-align: center;"><h4><strong>An Effective Sequence Alignment Method for Duplicate Crash Report Detection</strong></h4></p>
+            <p style="text-align: center;">
+                <strong>Irving Muller Rodrigues</strong> <a style="color:blue" href="mailto:irving.rodrigues@gmail.com">irving.rodrigues@gmail.com</a> <i>(Polytechnique Montreal)</i>, <strong>Daniel Aloise</strong> <a style="color:blue" href="mailto:daniel.aloise@polymtl.ca">daniel.aloise@polymtl.ca</a> <i>(Polytechnique Montreal)</i>,<br>
+                <strong>Eraldo Rezende Fernandes</strong> <a style="color:blue" href="mailto:eraldo@facom.ufms.br">eraldo@facom.ufms.br</a> <i>(Universidade Federal de Mato Grosso do Sul)</i>
+            </p>
+            <p><strong>Abstract:</strong> Software systems can automatically send crash reports to developers for investigation
+                when a program failure occurs. A significant portion of these crash reports are duplicate, i.e., they were caused
+                by the same software issue. In general, developers want to group duplicate crash reports into the same cluster,
+                denoted bucket, to better analyze the software failure. However, to manually perform this task is time consuming,
+                laborious and impractical in many software systems. In this paper, we present a novel method to automatically detect duplicate
+                crash reports based on stack traces generated when the system crashes. Our technique is an extension of a previous method based
+                on the Needleman-Wunsch algorithm. This previous method computes the similarity between two stack traces by means of edit operations considering fixed penalties. We propose a mechanism that incorporates the position and the frequency of functions
+                in the stack trace in order to compute these penalties. We demonstrate that our technique outperforms state-of-the-art
+                systems and strong baselines in different scenarios.
+            </p>
+        </header>
+    </div>
+</section>
+&lt;!&ndash; Footer &ndash;&gt;
+<footer id="footer">
+    <div class="inner">
+        <div class="flex">
+            <div class="copyright">
+                &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+            </div>
+            <ul class="icons">
+                <li><a href="https://www.facebook.com/Maltesque-Workshop-168364760413829/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
+                <li><a href="https://twitter.com/MaLTeSQuE_2018" class="icon fa-twitter"
+                       target="blank" ><span class="label">Twitter</span></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+-->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						</div>
+						<ul class="icons">
+                         <!-- <li><a href="https://www.facebook.com/Maltesque-Workshop-168364760413829/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>-->
+                         <li><a href="https://twitter.com/sqa4ai" class="icon fa-twitter"
+                            target="blank" ><span class="label">Twitter</span></a></li>
+                    </ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
